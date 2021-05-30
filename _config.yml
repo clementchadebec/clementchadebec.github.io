@@ -133,11 +133,6 @@ plugins:
   - jekyll-twitter-plugin
   - jemoji
 
-plugins_dir: [jekyll-scholar]
-
-# Load plugins
-gems: ['jekyll/scholar']
-
 # Extras
 github: [metadata]
 
