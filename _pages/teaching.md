@@ -2,10 +2,68 @@
 layout: page
 permalink: /teaching/
 title: teaching
-description: Materials for courses you taught. Replace this text with your description.
+description:
 nav: true
 ---
 
-For now, this page is assumed to be a static description of your courses. You can convert it to a collection similar to `_projects/` so that you can have a dedicated page for each course.
+<!-- #2021 -->
+<div class="publications">
+    <h2 class="year">2021 - 2020</h2>
+        <div class="row">
+            <div class="col-sm-3 abbr">
+                Université de Paris
+            </div>
+            <div class="col-sm-8">
+                <div class="title"><b>Teaching Assistant in Mathematics</b></div>
+                <div class="author"><em>MM4 - Algèbre et Analyse fondamentale (L2)</em></div>
+            </div>
+        </div>
+</div>
+<div class="publications">
+        <div class="row">
+            <div class="col-sm-3 abbr">
+                Université de Paris
+            </div>
+            <div class="col-sm-8">
+                <div class="title"><b>Tutorship in Mathematics</b></div>
+                <div class="author"><em>Maths (L1/L2)</em></div>
+            </div>
+        </div>
+</div>
 
-Organize your courses by years, topics, or universities, however you like!
+<!-- #before 2020 -->
+<div class="publications">
+    <h2 class="year">2020 - 2018</h2>
+        <div class="row">
+            <div class="col-sm-3 abbr">
+                Lycée Charlemagne
+            </div>
+            <div class="col-sm-8">
+                <div class="title"><b>Teaching Assistant in Physics</b></div>
+                <div class="author"><em>MPSI</em></div>
+            </div>
+        </div>
+</div>
+<div class="publications">
+        <div class="row">
+            <div class="col-sm-3 abbr">
+                Lycée Condorcet
+            </div>
+            <div class="col-sm-8">
+                <div class="title"><b>Teaching Assistant in Mathematics</b></div>
+                <div class="author"><em>PSI*</em></div>
+            </div>
+        </div>
+</div>
+<div class="publications">
+    <h2 class="year">2020 - 2016</h2>
+        <div class="row">
+            <div class="col-sm-3 abbr">
+                Lycée Condorcet
+            </div>
+            <div class="col-sm-8">
+                <div class="title"><b>Teaching Assistant in Mathematics</b></div>
+                <div class="author"><em>PSI*</em></div>
+            </div>
+        </div>
+</div>

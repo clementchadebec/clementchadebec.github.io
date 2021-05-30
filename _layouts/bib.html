@@ -4,10 +4,10 @@
 <div class="row">
   <div class="col-sm-2 abbr">
   {% if entry.abbr %}
-    {% if site.data.venues[entry.abbr] %}
-    <abbr class="badge"><a href="{{site.data.venues[entry.abbr].url}}" target="_blank">{{entry.abbr}}</a></abbr>
+    {% if entry.abbr == 'preprint' %}
+    <abbr class="badge badge-info"><a href="{{site.data.venues[entry.abbr].url}}" target="_blank">{{entry.abbr}}</a></abbr>
     {% else %}
-    <abbr class="badge">{{entry.abbr}}</abbr>
+    <abbr class="badge badge-primary">{{entry.abbr}}</abbr>
     {% endif %}
   {% endif %}
   </div>
@@ -125,6 +125,13 @@
     {% endif %}
     {% if entry.website %}
       <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button" target="_blank">Website</a>
+    {% endif %}
+    {% if entry.bib %}
+      {% if entry.bib contains '://' %}
+      <a href="{{ entry.bib }}" class="btn btn-sm z-depth-0" role="button" target="_blank">Bibtex</a>
+      {% else %}
+      <a href="{{ entry.bib | prepend: '/assets/bibtex/' | relative_url }}" class="btn btn-sm z-depth-0" role="button" target="_blank">Bibtex</a>
+      {% endif %}
     {% endif %}
     </div>
 
