@@ -129,9 +129,14 @@ plugins:
   - jekyll-email-protect
   - jekyll-github-metadata
   - jekyll-paginate-v2
-  - jekyll/scholar
+  - jekyll-scholar
   - jekyll-twitter-plugin
   - jemoji
+
+plugins_dir: [jekyll-scholar]
+
+# Load plugins
+gems: ['jekyll/scholar']
 
 # Extras
 github: [metadata]
