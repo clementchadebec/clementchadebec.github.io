@@ -15,7 +15,7 @@ nav: true
             </div>
             <div class="col-sm-8">
                 <div class="title"><b>Teaching Assistant in Mathematics</b></div>
-                <div class="author"><em>MM4 - Algèbre et Analyse fondamentale (L2)</em></div>
+                <em>MM4 - Algèbre et Analyse fondamentale (L2)</em>
             </div>
         </div>
 </div>
@@ -26,7 +26,7 @@ nav: true
             </div>
             <div class="col-sm-8">
                 <div class="title"><b>Tutorship in Mathematics</b></div>
-                <div class="author"><em>Maths (L1/L2)</em></div>
+               <em>Maths (L1/L2)</em>
             </div>
         </div>
 </div>
@@ -40,7 +40,7 @@ nav: true
             </div>
             <div class="col-sm-8">
                 <div class="title"><b>Teaching Assistant in Physics</b></div>
-                <div class="author"><em>MPSI</em></div>
+                <em>MPSI</em>
             </div>
         </div>
 </div>
@@ -51,7 +51,7 @@ nav: true
             </div>
             <div class="col-sm-8">
                 <div class="title"><b>Teaching Assistant in Mathematics</b></div>
-                <div class="author"><em>PSI*</em></div>
+                <em>PSI*</em>
             </div>
         </div>
 </div>
@@ -63,7 +63,7 @@ nav: true
             </div>
             <div class="col-sm-8">
                 <div class="title"><b>Teaching Assistant in Mathematics</b></div>
-                <div class="author"><em>PSI*</em></div>
+                <em>PSI*</em>
             </div>
         </div>
 </div>
