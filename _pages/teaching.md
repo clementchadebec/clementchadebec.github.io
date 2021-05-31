@@ -56,7 +56,7 @@ nav: true
         </div>
 </div>
 <div class="publications">
-    <h2 class="year">2020 - 2016</h2>
+    <h2 class="year">2018 - 2016</h2>
         <div class="row">
             <div class="col-sm-3 abbr">
                 Lycée Condorcet
