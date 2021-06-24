@@ -132,6 +132,10 @@ plugins:
   - jekyll/scholar
   - jekyll-twitter-plugin
   - jemoji
+  - jekyll-sitemap
+
+
+sitemap: true
 
 # Extras
 github: [metadata]
