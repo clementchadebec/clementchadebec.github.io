@@ -1,7 +1,7 @@
 ---
 layout: page
-title: project 1
-description: a project with a background image
+title: Pyraug
+description: A python library to perform Data Augmentation with VAEs
 img: /assets/img/12.jpg
 importance: 1
 category: work
