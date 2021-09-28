@@ -17,21 +17,21 @@ bibliography: 2018-12-22-distill.bib
 
 
 <div class="row ml-0 mr-0 p-0">
-    <div class="row ml-2 mr-2 p-10"></div>
+    <div class="row ml-0 mr-0 p-0"></div>
     <div class="icon" data-toggle="tooltip" title="Code Repository">
-            <a href="{{ project.github }}" target="_blank"><i class="fab fa-github gh-icon fa-2x"></i></a>
+            <a href="{{ page.github }}" target="_blank"><i class="fab fa-github gh-icon fa-2x"></i></a>
         </div>
     <div class="row ml-2 mr-2 p-10"></div>
         <div class="icon" data-toggle="tooltip" title="Documentation">
-            <a href="{{ project.documentation }}" target="_blank"><i class="fas fa-book fa-2x"></i></a>
+            <a href="{{ page.documentation }}" target="_blank"><i class="fas fa-book fa-2x"></i></a>
         </div>
     <div class="row ml-2 mr-2 p-10"></div>
         <div class="icon" data-toggle="tooltip" title="Pypi Package">
-            <a href="{{ project.pypi_package }}" target="_blank"><i class="fab fa-python fa-2x"></i></a>
+            <a href="{{ page.pypi_package }}" target="_blank"><i class="fab fa-python fa-2x"></i></a>
         </div>
     <div class="row ml-2 mr-2 p-10"></div>
         <div class="icon" data-toggle="tooltip" title="Arxiv">
-            <a href="{{ project.arxiv }}" target="_blank"><i class="ai ai-arxiv fa-2x"></i></a>
+            <a href="{{ page.arxiv }}" target="_blank"><i class="ai ai-arxiv fa-2x"></i></a>
         </div>
 </div>
 
