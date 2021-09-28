@@ -2139,7 +2139,7 @@ d-appendix > distill-appendix {
   white-space: nowrap;
   font-family: -apple-system, BlinkMacSystemFont, "Roboto", Helvetica, sans-serif;
   font-size: 75%;
-  color: hsla(206, 90%, 20%, 0.7);
+  color: var(--global-theme-color);
   display: inline-block;
   line-height: 1.1em;
   text-align: center;
@@ -2168,6 +2168,7 @@ ul li {
 
 ul li:last-of-type {
   border-bottom: none;
+  color: #000000
 }
 
 </style>

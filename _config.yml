@@ -67,8 +67,8 @@ panelbear_analytics: XXXXXXXXX # panelbear analytics site ID
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: # your blog must have a name for it to show up in the nav bar
-blog_description: a simple whitespace theme for academics
+blog_name: Blog Posts # your blog must have a name for it to show up in the nav bar
+blog_description: Overview of projects I am working on or case study
 permalink: /blog/:year/:title/
 
 # Pagination
