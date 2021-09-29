@@ -41,10 +41,10 @@ nav: true
   </div>
 
 
-   <!-- DA DAI -->
+   <!-- DA DALI -->
   <div class="row">
     <div class="col-sm-2 abbr">
-      <abbr class="badge badge-info"><a target="_blank">workshop</a></abbr>
+      <abbr class="badge badge-info"><a target="_blank">preprint</a></abbr>
     </div>
     <div id="3" class="col-sm-8">
         <div class="title">Data Generation in Low Sample Size Setting Using Manifold Sampling and a Geometry-Aware VAE,</div>
