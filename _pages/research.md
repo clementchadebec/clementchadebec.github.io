@@ -47,7 +47,7 @@ nav: true
       <abbr class="badge badge-info"><a target="_blank">preprint</a></abbr>
     </div>
     <div id="3" class="col-sm-8">
-        <div class="title">Data Augmentation with Variational Autoencoders and Manifold Sampling,</div>
+        <div class="title">Data Augmentation with Variational Autoencoders and Manifold Sampling</div>
         <div class="author">
           <em>Chadebec, C.</em> and Allassonnière, S.
         </div>
