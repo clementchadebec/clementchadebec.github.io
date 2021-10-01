@@ -44,7 +44,7 @@ nav: true
    <!-- DA DALI -->
   <div class="row">
     <div class="col-sm-2 abbr">
-      <abbr class="badge badge-info"><a target="_blank">preprint</a></abbr>
+      <abbr class="badge badge-info"><a target="_blank">workshop</a></abbr>
     </div>
     <div id="3" class="col-sm-8">
         <div class="title">Data Augmentation with Variational Autoencoders and Manifold Sampling</div>
