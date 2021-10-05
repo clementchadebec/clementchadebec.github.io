@@ -25,6 +25,7 @@ nav: true
         <div class="author">
           <em>Chadebec, C.</em> and Allassonnière, S.
         </div>
+       <div class="book"><em>Deep Generative Models, and Data Augmentation, Labelling, and Imperfections.</em></div>
       <div class="links">
         <a class="abstract btn btn-sm z-depth-0" role="button">
         Abs

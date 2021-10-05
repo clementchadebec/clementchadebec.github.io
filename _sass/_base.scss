@@ -413,6 +413,12 @@ footer.sticky-bottom {
       font-style: normal;
     }
   }
+  .book {
+    > em {
+      font-size: 0.9rem;
+      font-style: italic;;
+    }
+  }
   .links {
     a.btn {
       color: var(--global-text-color);
