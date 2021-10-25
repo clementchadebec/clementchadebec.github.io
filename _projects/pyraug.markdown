@@ -6,7 +6,7 @@ img: assets/img/pyraug_project/logo_pyraug_2.jpeg
 github: https://github.com/clementchadebec/pyraug
 documentation: https://pyraug.readthedocs.io/en/latest/
 licence: https://opensource.org/licenses/Apache-2.0
-download: https://github.com/clementchadebec/pyraug/stargazers
+stars: https://github.com/clementchadebec/pyraug/stargazers
 pypi_package: https://pypi.org/project/pyraug/
 arxiv: https://arxiv.org/abs/2105.00026
 importance: 1
@@ -14,26 +14,6 @@ category: work
 
 bibliography: 2018-12-22-distill.bib
 ---
-
-
-<div class="row ml-0 mr-0 p-0">
-    <div class="row ml-0 mr-0 p-0"></div>
-    <div class="icon" data-toggle="tooltip" title="Code Repository">
-            <a href="{{ page.github }}" target="_blank"><i class="fab fa-github gh-icon fa-2x"></i></a>
-        </div>
-    <div class="row ml-2 mr-2 p-10"></div>
-        <div class="icon" data-toggle="tooltip" title="Documentation">
-            <a href="{{ page.documentation }}" target="_blank"><i class="fas fa-book fa-2x"></i></a>
-        </div>
-    <div class="row ml-2 mr-2 p-10"></div>
-        <div class="icon" data-toggle="tooltip" title="Pypi Package">
-            <a href="{{ page.pypi_package }}" target="_blank"><i class="fab fa-python fa-2x"></i></a>
-        </div>
-    <div class="row ml-2 mr-2 p-10"></div>
-        <div class="icon" data-toggle="tooltip" title="Arxiv">
-            <a href="{{ page.arxiv }}" target="_blank"><i class="ai ai-arxiv fa-2x"></i></a>
-        </div>
-</div>
 
 <p style="margin-bottom: 2em">
 </p>
