@@ -6,6 +6,20 @@ description:
 nav: true
 ---
 
+<!-- #2022 -->
+<div class="publications">
+    <h2 class="year">2022 - 2021</h2>
+        <div class="row">
+            <div class="col-sm-3 abbr">
+                Université de Paris
+            </div>
+            <div class="col-sm-8">
+                <div class="title"><b>Teaching Assistant in Mathematics</b></div>
+                <em>MAN2 - Analyse (L2)</em>
+            </div>
+        </div>
+</div>
+
 <!-- #2021 -->
 <div class="publications">
     <h2 class="year">2021 - 2020</h2>
