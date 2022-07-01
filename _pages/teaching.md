@@ -15,7 +15,7 @@ nav: true
             </div>
             <div class="col-sm-8">
                 <div class="title"><b>Teaching Assistant in Mathematics</b></div>
-                <em>MAN2 - Analyse (L2)</em>
+                <em>MMAN2 - Analyse (L1)</em>
             </div>
         </div>
 </div>
