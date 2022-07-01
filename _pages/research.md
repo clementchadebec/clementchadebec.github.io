@@ -11,7 +11,60 @@ nav: true
 
 <div class="publications">
 
-  
+  <!-- #2022 -->
+  <h2 class="year">2022</h2>
+
+  <!-- DA HDLSS -->
+  <div class="row">
+    <div class="col-sm-2 abbr">
+      <span class="badge badge-secondary">journal</span>
+    </div>
+    <div id="3" class="col-sm-8">
+        <div class="title">Data Augmentation in High Dimensional Low Sample Size  Setting Using a Geometry-Based Variational Autoencoder</div>
+        <div class="author">
+          <em>Chadebec, C.</em> Thibeau-Sutre, E., Burgos, N. and Allassonnière, S.
+        </div>
+        <div class="book"><em>IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI).</em></div>
+      <div class="links">
+        <a class="abstract btn btn-sm z-depth-0" role="button">
+        Abs
+        </a>
+        <a href="http://arxiv.org/abs/{{ 2105.00026 }}" class="btn btn-sm z-depth-0"   role="button" target="_blank">arXiv</a>
+        <a href="{{'/assets/bibtex/chadebec_data_2021.bib' | relative_url }}"   class="btn btn-sm z-depth-0" role="button" target="_blank">Bibtex</a>
+      </div>
+      <div class="abstract hidden">
+        <p>
+          In this paper, we propose a new method to perform data augmentation in a reliable way in the High Dimensional Low Sample Size (HDLSS) setting using a geometry-based variational autoencoder. Our approach combines a proper latent space modeling of the VAE seen as a Riemannian manifold with a new generation scheme which produces more meaningful samples especially in the context of small data sets. The proposed method is tested through a wide experimental study where its robustness to data sets, classifiers and training samples size is stressed. It is also validated on a medical imaging classification task on the challenging ADNI database where a small number of 3D brain MRIs are considered and augmented using the proposed VAE framework. In each case, the proposed method allows for a significant and reliable gain in the classification metrics. For instance, balanced accuracy jumps from 66.3% to 74.3% for a state-of-the-art CNN classifier trained with 50 MRIs of cognitively normal (CN) and 50 Alzheimer disease (AD) patients and from 77.7% to 86.3% when trained with 243 CN and 210 AD while improving greatly sensitivity and specificity metrics.
+          </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- PYTHAE -->
+  <div class="row">
+    <div class="col-sm-2 abbr">
+      <span class="badge badge-info">preprint</span>
+    </div>
+    <div id="3" class="col-sm-8">
+        <div class="title">Pythae: Unifying Generative Autoencoders in Python -- A Benchmarking Use Case</div>
+        <div class="author">
+          <em>Chadebec, C.</em> Vincent, LJ. and Allassonnière, S.
+        </div>
+      <div class="links">
+        <a class="abstract btn btn-sm z-depth-0" role="button">
+        Abs
+        </a>
+        <a href="http://arxiv.org/abs/{{ 2206.08309}}" class="btn btn-sm z-depth-0"   role="button" target="_blank">arXiv</a>
+        <a href="{{'/assets/bibtex/chadebec2022pythae.bib' | relative_url }}"   class="btn btn-sm z-depth-0" role="button" target="_blank">Bibtex</a>
+      </div>
+      <div class="abstract hidden">
+        <p>
+          n recent years, deep generative models have attracted increasing interest due to their capacity to model complex distributions. Among those models, variational autoencoders have gained popularity as they have proven both to be computationally efficient and yield impressive results in multiple fields. Following this breakthrough, extensive research has been done in order to improve the original publication, resulting in a variety of different VAE models in response to different tasks. In this paper we present Pythae, a versatile open-source Python library providing both a unified implementation and a dedicated framework allowing straightforward, reproducible and reliable use of generative autoencoder models. We then propose to use this library to perform a case study benchmark where we present and compare 19 generative autoencoder models representative of some of the main improvements on downstream tasks such as image reconstruction, generation, classification, clustering and interpolation. The open-source library can be found at  <a href="https://github.com/clementchadebec/benchmark_VAE" target="blank">this https URL</a>.
+          </p>
+      </div>
+    </div>
+  </div>
+
   <!-- #2021 -->
   <h2 class="year">2021</h2>
 
@@ -37,31 +90,6 @@ nav: true
         <p>
           We propose a new efficient way to sample from a Variational Autoencoder in the challenging low sample size setting. This method reveals particularly well suited to perform data augmentation in such a low data regime and is validated across various standard and real-life data sets. In particular, this scheme allows to greatly improve classification results on the OASIS database where balanced accuracy jumps from 80.7% for a classifier trained with the raw data to 88.6% when trained only with the synthetic data generated by our method. Such results were also observed on 3 standard data sets and with other classifiers. A code is available <a href="https://github.com/clementchadebec/Data_Augmentation_with_VAE-DALI" target="blank">here</a>.
         </p>
-      </div>
-    </div>
-  </div>
-
-  <!-- DA HDLSS -->
-  <div class="row">
-    <div class="col-sm-2 abbr">
-      <span class="badge badge-info">preprint</span>
-    </div>
-    <div id="3" class="col-sm-8">
-        <div class="title">Data Augmentation in High Dimensional Low Sample Size  Setting Using a Geometry-Based Variational Autoencoder</div>
-        <div class="author">
-          <em>Chadebec, C.</em> Thibeau-Sutre, E., Burgos, N. and Allassonnière, S.
-        </div>
-      <div class="links">
-        <a class="abstract btn btn-sm z-depth-0" role="button">
-        Abs
-        </a>
-        <a href="http://arxiv.org/abs/{{ 2105.00026 }}" class="btn btn-sm z-depth-0"   role="button" target="_blank">arXiv</a>
-        <a href="{{'/assets/bibtex/chadebec_data_2021.bib' | relative_url }}"   class="btn btn-sm z-depth-0" role="button" target="_blank">Bibtex</a>
-      </div>
-      <div class="abstract hidden">
-        <p>
-          In this paper, we propose a new method to perform data augmentation in a reliable way in the High Dimensional Low Sample Size (HDLSS) setting using a geometry-based variational autoencoder. Our approach combines a proper latent space modeling of the VAE seen as a Riemannian manifold with a new generation scheme which produces more meaningful samples especially in the context of small data sets. The proposed method is tested through a wide experimental study where its robustness to data sets, classifiers and training samples size is stressed. It is also validated on a medical imaging classification task on the challenging ADNI database where a small number of 3D brain MRIs are considered and augmented using the proposed VAE framework. In each case, the proposed method allows for a significant and reliable gain in the classification metrics. For instance, balanced accuracy jumps from 66.3% to 74.3% for a state-of-the-art CNN classifier trained with 50 MRIs of cognitively normal (CN) and 50 Alzheimer disease (AD) patients and from 77.7% to 86.3% when trained with 243 CN and 210 AD while improving greatly sensitivity and specificity metrics.
-          </p>
       </div>
     </div>
   </div>

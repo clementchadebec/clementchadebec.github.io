@@ -12,3 +12,5 @@ group :jekyll_plugins do
     gem 'unicode_utils'
     gem 'webrick'
 end
+
+gem "ffi", "~> 1.15"
