@@ -7,7 +7,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="google-site-verification" content="K8iQXKj8_YwAKThxuRBM8cv5uQgM7Jyq8gCzFFWqEGA" />
 
-<title>Clément  Chadebec | blank</title>
+<title>Clément  Chadebec | Pyraug</title>
 <meta name="description" content="A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 ">
 
@@ -32,7 +32,7 @@
 
 <link rel="stylesheet" href="/assets/css/main.css">
 
-<link rel="canonical" href="/blog/">
+<link rel="canonical" href="/projects/pyraug/">
 
 <!-- JQuery -->
 <!-- jQuery -->
@@ -97,7 +97,7 @@
           </li>
           
           <!-- Blog -->
-          <li class="nav-item active">
+          <li class="nav-item ">
             <a class="nav-link" href="/blog/">
               blog
               
@@ -105,8 +105,6 @@
           </li>
           
           <!-- Other pages -->
-          
-          
           
           
           
@@ -169,24 +167,34 @@
     <div class="container mt-5">
       <div class="post">
 
-  <div class="header-bar">
-    <h1>Blog Posts</h1>
-    <h2>Overview of projects I am working on or case study</h2>
-  </div>
+  <header class="post-header">
+    <h1 class="post-title">Pyraug</h1>
+    <p class="post-description">A python library to perform data augmentation with VAEs</p>
+  </header>
 
+  <article>
+    <p style="margin-bottom: 2em">
+</p>
 
-  <ul class="post-list">
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2021/pyraug/">Pyraug Case Study 1</a></h3>
-        <p class="post-meta">July 12, 2021</p>
-        <p>Use of Pyraug software to perform MRI classification</p>
-      </li>
-    
-  </ul>
+<h3 id="why-data-augmentation-">Why data augmentation ?</h3>
 
-  
+<p>Even <d-cite key="ucar_bridging_2019"></d-cite>
+though always larger data sets are now available, the lack of labeled data remains a tremendous issue in many fields of application. Among others, a good example is healthcare where practitioners have to deal most of the time with (very) low sample sizes (think of small patient cohorts) along with very high dimensional data (think of neuroimaging data that are 3D volumes with millions of voxels). Unfortunately, this leads to a very poor representation of a given population and makes classical statistical analyses unreliable. Meanwhile, the remarkable performance of algorithms heavily relying on the deep learning framework has made them extremely attractive and very popular. However, such results are strongly conditioned by the number of training samples since such models usually need to be trained on huge data sets to prevent over-fitting or to give statistically meaningful results. A way to address such issues is to perform Data Augmentation (DA) which consists in creating synthetic samples to enrich an initial data set and allow machine learning algorithm to better generalize on unseen data. For instance, the easiest way to do this on images is to apply simple transformations such as the addition of Gaussian noise, cropping or padding, and assign the label of the initial image to the created ones.</p>
 
+<h3 id="limitations-of-classic-da">Limitations of classic DA</h3>
+
+<p>While such augmentation techniques have revealed very useful, they remain strongly data dependent and limited. Some transformations may indeed be uninformative or even induce bias. For instance, think of a digit representing a 6 which gives a 9 when rotated. While assessing the relevance of augmented data may be quite straightforward for simple data sets, it reveals very challenging for complex data and may require the intervention of an <em>expert</em> assessing the degree of relevance of the proposed transformations.</p>
+
+<h3 id="generative-models-a-new-hope">Generative models: A new hope</h3>
+
+<p>The recent rise in performance of generative models such as GAN or VAE has made them very attractive models to perform DA. However, the main limitation to a wider use of these models is that they most of the time produce blurry and fuzzy samples. This undesirable effect is even more emphasized when they are trained with a small number of samples which makes them very hard to use in practice to perform DA in the high dimensional (very) low sample size (HDLSS) setting.</p>
+
+<p><strong>This is why Pyraug was born!</strong></p>
+
+  </article>
+
+  <d-bibliography src="/assets/bibliography/2018-12-22-distill.bib">
+  </d-bibliography>
 
 </div>
 
