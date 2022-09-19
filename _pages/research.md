@@ -14,6 +14,58 @@ nav: true
   <!-- #2022 -->
   <h2 class="year">2022</h2>
 
+  <!-- PYTHAE -->
+  <div class="row">
+    <div class="col-sm-2 abbr">
+      <span class="badge badge-success">proceedings</span>
+    </div>
+    <div id="3" class="col-sm-8">
+        <div class="title">Pythae: Unifying Generative Autoencoders in Python -- A Benchmarking Use Case</div>
+        <div class="author">
+          <em>Chadebec, C.</em>, Vincent, L. J. and Allassonnière, S.
+        </div>
+         <div class="book"><em>Accepted to Neural Information Processing Systems (NeurIPS 2022).</em></div>
+      <div class="links">
+        <a class="abstract btn btn-sm z-depth-0" role="button">
+        Abs
+        </a>
+        <a href="http://arxiv.org/abs/{{ 2206.08309}}" class="btn btn-sm z-depth-0"   role="button" target="_blank">arXiv</a>
+        <a href="{{'/assets/bibtex/chadebec2022pythae.bib' | relative_url }}"   class="btn btn-sm z-depth-0" role="button" target="_blank">Bibtex</a>
+      </div>
+      <div class="abstract hidden">
+        <p>
+          In recent years, deep generative models have attracted increasing interest due to their capacity to model complex distributions. Among those models, variational autoencoders have gained popularity as they have proven both to be computationally efficient and yield impressive results in multiple fields. Following this breakthrough, extensive research has been done in order to improve the original publication, resulting in a variety of different VAE models in response to different tasks. In this paper we present Pythae, a versatile open-source Python library providing both a unified implementation and a dedicated framework allowing straightforward, reproducible and reliable use of generative autoencoder models. We then propose to use this library to perform a case study benchmark where we present and compare 19 generative autoencoder models representative of some of the main improvements on downstream tasks such as image reconstruction, generation, classification, clustering and interpolation. The open-source library can be found at  <a href="https://github.com/clementchadebec/benchmark_VAE" target="blank">this https URL</a>.
+          </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Geometric Perspective on VAEs -->
+  <div class="row">
+    <div class="col-sm-2 abbr">
+      <span class="badge badge-success">proceedings</span>
+    </div>
+    <div id="3" class="col-sm-8">
+        <div class="title">A Geometric Perspective on Variational Autoencoders</div>
+        <div class="author">
+          <em>Chadebec, C.</em> and Allassonnière, S.
+        </div>
+         <div class="book"><em>Accepted to Neural Information Processing Systems (NeurIPS 2022).</em></div>
+      <div class="links">
+        <a class="abstract btn btn-sm z-depth-0" role="button">
+        Abs
+        </a>
+        <a href="https://arxiv.org/abs/2209.07370" class="btn btn-sm z-depth-0"   role="button" target="_blank">arXiv</a>
+        <a href="{{'/assets/bibtex/chadebec2022pythae.bib' | relative_url }}"   class="btn btn-sm z-depth-0" role="button" target="_blank">Bibtex</a>
+      </div>
+      <div class="abstract hidden">
+        <p>
+          This paper introduces a new interpretation of the Variational Autoencoder framework by taking a fully geometric point of view. We argue that vanilla VAE models unveil naturally a Riemannian structure in their latent space and that taking into consideration those geometrical aspects can lead to better interpolations and an improved generation procedure. This new proposed sampling method consists in sampling from the uniform distribution deriving intrinsically from the learned Riemannian latent space and we show that using this scheme can make a vanilla VAE competitive and even better than more advanced versions on several benchmark datasets. Since generative models are known to be sensitive to the number of training samples we also stress the method's robustness in the low data regime.
+          </p>
+      </div>
+    </div>
+  </div>
+
   <!-- DA HDLSS -->
   <div class="row">
     <div class="col-sm-2 abbr">
@@ -22,7 +74,7 @@ nav: true
     <div id="3" class="col-sm-8">
         <div class="title">Data Augmentation in High Dimensional Low Sample Size  Setting Using a Geometry-Based Variational Autoencoder</div>
         <div class="author">
-          <em>Chadebec, C.</em> Thibeau-Sutre, E., Burgos, N. and Allassonnière, S.
+          <em>Chadebec, C.</em>, Thibeau-Sutre, E., Burgos, N. and Allassonnière, S.
         </div>
         <div class="book"><em>IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI).</em></div>
       <div class="links">
@@ -39,29 +91,17 @@ nav: true
       </div>
     </div>
   </div>
-
-  <!-- PYTHAE -->
+  <!-- LongVAE -->
   <div class="row">
     <div class="col-sm-2 abbr">
-      <span class="badge badge-info">preprint</span>
+      <span class="badge badge-primary">workshop</span>
     </div>
     <div id="3" class="col-sm-8">
-        <div class="title">Pythae: Unifying Generative Autoencoders in Python -- A Benchmarking Use Case</div>
+        <div class="title">An Image Feature Mapping Model for Continuous Longitudinal Data Completion and Generation of Synthetic Patient Trajectories	</div>
         <div class="author">
-          <em>Chadebec, C.</em> Vincent, LJ. and Allassonnière, S.
+          <em>Chadebec, C.</em>, Huijben, E. M., Pluim, J. P., Allassonnière, S. and J.M van Eijnatten, M. A.
         </div>
-      <div class="links">
-        <a class="abstract btn btn-sm z-depth-0" role="button">
-        Abs
-        </a>
-        <a href="http://arxiv.org/abs/{{ 2206.08309}}" class="btn btn-sm z-depth-0"   role="button" target="_blank">arXiv</a>
-        <a href="{{'/assets/bibtex/chadebec2022pythae.bib' | relative_url }}"   class="btn btn-sm z-depth-0" role="button" target="_blank">Bibtex</a>
-      </div>
-      <div class="abstract hidden">
-        <p>
-          n recent years, deep generative models have attracted increasing interest due to their capacity to model complex distributions. Among those models, variational autoencoders have gained popularity as they have proven both to be computationally efficient and yield impressive results in multiple fields. Following this breakthrough, extensive research has been done in order to improve the original publication, resulting in a variety of different VAE models in response to different tasks. In this paper we present Pythae, a versatile open-source Python library providing both a unified implementation and a dedicated framework allowing straightforward, reproducible and reliable use of generative autoencoder models. We then propose to use this library to perform a case study benchmark where we present and compare 19 generative autoencoder models representative of some of the main improvements on downstream tasks such as image reconstruction, generation, classification, clustering and interpolation. The open-source library can be found at  <a href="https://github.com/clementchadebec/benchmark_VAE" target="blank">this https URL</a>.
-          </p>
-      </div>
+        <div class="book"><em>DGM4MICCAI: MICCAI Workshop on Deep Generative Models</em></div>
     </div>
   </div>
 
