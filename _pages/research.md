@@ -56,7 +56,7 @@ nav: true
         Abs
         </a>
         <a href="https://arxiv.org/abs/2209.07370" class="btn btn-sm z-depth-0"   role="button" target="_blank">arXiv</a>
-        <a href="{{'/assets/bibtex/chadebec2022pythae.bib' | relative_url }}"   class="btn btn-sm z-depth-0" role="button" target="_blank">Bibtex</a>
+        <a href="{{'/assets/bibtex/chadebec2022geometric.bib' | relative_url }}"   class="btn btn-sm z-depth-0" role="button" target="_blank">Bibtex</a>
       </div>
       <div class="abstract hidden">
         <p>
