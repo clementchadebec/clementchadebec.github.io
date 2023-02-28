@@ -169,6 +169,91 @@ nav: true
 
 <div class="publications">
 
+  <!-- #2023 -->
+  <h2 class="year">2023</h2>
+
+  <!-- IMB -->
+  <div class="row">
+    <div class="col-sm-2 abbr">
+      <span class="badge badge-default">seminar</span>
+    </div>
+    <div id="3" class="col-sm-8">
+        <div class="title">Talk at G-Research  </div>
+        <div class="author">
+          <em>Chadebec, C.</em>
+        </div>
+      <div class="links">
+        <a class="abstract btn btn-sm z-depth-0" role="button">
+        Abs
+        </a>
+        <a href="{{'/assets/pdf/VAE_from_theory_to_practice.pdf' | relative_url }}"   class="btn btn-sm z-depth-0" role="button" target="_blank">Slides</a>
+      </div>
+      <div class="abstract hidden">
+        <p>
+          I presented some of the main advancements in the VAE literature and explain how to train these models using <a href="https://github.com/clementchadebec/benchmark_VAE">Pythae</a> [<a href="http://arxiv.org/abs/{{ 2206.08309 }}">arxiv</a>].
+          </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="publications">
+  
+  <!-- #2022 -->
+  <h2 class="year">2022</h2>
+
+  <!-- NIPS -->
+  <div class="row">
+    <div class="col-sm-2 abbr">
+      <span class="badge badge-success">conference</span>
+    </div>
+    <div id="3" class="col-sm-8">
+        <div class="title"> NeurIPS 2022 </div>
+        <div class="author">
+          <em>Chadebec, C.</em>
+        </div>
+      <div class="links">
+        <a class="abstract btn btn-sm z-depth-0" role="button">
+        Abs
+        </a>
+      </div>
+      <div class="abstract hidden">
+        <p>
+          I presented my two papers "A Geometric Perpective on Varitational Autoencoders [<a href="http://arxiv.org/abs/{{ 2209.07370 }}">arxiv</a>] and "Pythae: Unifying Generative Autoencoders in Python [<a href="http://arxiv.org/abs/{{ 2206.08309 }}">arxiv</a>].
+          </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- IMB -->
+  <div class="row">
+    <div class="col-sm-2 abbr">
+      <span class="badge badge-default">seminar</span>
+    </div>
+    <div id="3" class="col-sm-8">
+        <div class="title">Talk at IBM Journal Club  </div>
+        <div class="author">
+          <em>Chadebec, C.</em>
+        </div>
+      <div class="links">
+        <a class="abstract btn btn-sm z-depth-0" role="button">
+        Abs
+        </a>
+        <a href="{{'/assets/pdf/Geometric_perspective_on_vae_IBM.pdf' | relative_url }}"   class="btn btn-sm z-depth-0" role="button" target="_blank">Slides</a>
+      </div>
+      <div class="abstract hidden">
+        <p>
+          I presented my paper "A Geometric Perpective on Varitational Autoencoders to the IBM Journal Club" [<a href="http://arxiv.org/abs/{{ 2209.07370 }}">arxiv</a>].
+          </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="publications">
+
   
   <!-- #2021 -->
   <h2 class="year">2021</h2>
