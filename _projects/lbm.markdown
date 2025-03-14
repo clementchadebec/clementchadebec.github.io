@@ -1,13 +1,14 @@
 ---
 layout: page
-title: <a href="https://github.com/clementchadebec/benchmark_VAE" target="_blank">Pythae</a>
-img: assets/img/pythae_project/site.png
-description: A python library for VAEs benchmarking
-redirect: https://github.com/clementchadebec/benchmark_VAE
-github: https://github.com/clementchadebec/benchmark_VAE
-gitstars: https://github.com/clementchadebec/benchmark_VAE/stargazers
-licence: https://opensource.org/licenses/Apache-2.0
-importance: 4
+title: <a href="https://gojasper.github.io/latent-bridge-matching/" target="_blank">LBM</a>
+img: assets/img/lbm_project/relight.jpg
+description: Latent Bridge Matching for Fast Image-to-Image Translation
+redirect: https://gojasper.github.io/latent-bridge-matching/
+github: https://github.com/gojasper/LBM
+gitstars: https://github.com/gojasper/LBM/stargazers
+arxiv: https://arxiv.org/abs/2503.07535
+demo: https://huggingface.co/spaces/jasperai/LBM_relighting
+importance: 1
 category: work
 ---
 

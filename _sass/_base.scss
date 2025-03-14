@@ -316,7 +316,7 @@ footer.sticky-bottom {
   }
 
   .grid-item {
-    width: 250px;
+    width: 45%;
     margin-bottom: 10px;
 
     a {
@@ -334,6 +334,9 @@ footer.sticky-bottom {
       }
       .card-title {
         color: $black-color;
+        font-size: 1.2rem;
+        font-weight: bold;
+        text-transform: uppercase;
       }
     }
   }

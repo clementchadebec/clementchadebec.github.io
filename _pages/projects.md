@@ -2,7 +2,7 @@
 layout: page
 title: projects
 permalink: /projects/
-description: Overview of the project I am working on
+description: Overview of the projects I am working on
 nav: true
 display_categories: [work]
 horizontal: false

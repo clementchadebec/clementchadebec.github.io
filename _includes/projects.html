@@ -8,6 +8,9 @@
       {% if project.img %}
       <img src="{{ project.img | relative_url }}" alt="project thumbnail">
       {% endif %}
+      {% if project.video %}
+      <video src="{{ project.video | relative_url }}" autoplay loop muted playsinline></video>
+      {% endif %}
       <div class="card-body">
         <h2 class="card-title text-lowercase">{{ project.title }}</h2>
         <p class="card-text">{{ project.description }}</p>
@@ -41,6 +44,18 @@
           <div class="row ml-2 mr-2 p-10"></div>
             <div class="icon" data-toggle="tooltip" title="Arxiv">
               <a href="{{ project.arxiv }}" target="_blank"><i class="ai ai-arxiv fa-2x"></i></a>
+            </div>
+          {% endif %}
+          {% if project.demo %}
+          <div class="row ml-2 mr-2 p-10"></div>
+            <div class="icon" data-toggle="tooltip" title="Demo">
+              <a href="{{ project.demo }}" target="_blank"><i class="fa fa-gamepad fa-2x"></i></a>
+            </div>
+          {% endif %}
+          {% if project.weights %}
+          <div class="row ml-2 mr-2 p-10"></div>
+            <div class="icon" data-toggle="tooltip" title="Weights">
+              <a href="{{ project.weights }}" target="_blank"><i class="fa fa-weight-hanging fa-2x"></i></a>
             </div>
           {% endif %}
         </div>
