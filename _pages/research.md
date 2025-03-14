@@ -17,7 +17,7 @@ nav: true
   <!-- FLASH -->
   <div class="row">
     <div class="col-sm-2 abbr">
-      <span class="badge badge-info">Preprint</span>
+      <span class="badge badge-info">preprint</span>
     </div>
     <div id="3" class="col-sm-8">
         <div class="title">LBM: Latent Bridge Matching for Fast Image-to-Image Translation</div>
