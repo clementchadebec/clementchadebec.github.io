@@ -11,6 +11,69 @@ nav: true
 
 <div class="publications">
 
+  <!-- #2025 -->
+  <h2 class="year">2025</h2>
+
+  <!-- FLASH -->
+  <div class="row">
+    <div class="col-sm-2 abbr">
+      <span class="badge badge-info">Preprint</span>
+    </div>
+    <div id="3" class="col-sm-8">
+        <div class="title">LBM: Latent Bridge Matching for Fast Image-to-Image Translation</div>
+        <div class="author">
+          <em>Chadebec, C.</em>, Tasar, O., Benaroche, E. and Aubin, B.
+        </div>
+         <div class="book"><em>Preprint</em></div>
+      <div class="links">
+        <a class="abstract btn btn-sm z-depth-0" role="button">
+        Abs
+        </a>
+        <a href="http://arxiv.org/abs/{{ 2503.07535}}" class="btn btn-sm z-depth-0"   role="button" target="_blank">arXiv</a>
+        <a href="{{'/assets/bibtex/chadebec_flash_2025.bib' | relative_url }}"   class="btn btn-sm z-depth-0" role="button" target="_blank">Bibtex</a>
+      </div>
+      <div class="abstract hidden">
+        <p>
+          In this paper, we introduce Latent Bridge Matching (LBM),
+a new, versatile and scalable method that relies on Bridge
+Matching in a latent space to achieve fast image-to-image
+translation. We show that the method can reach state-ofthe-art results for various image-to-image tasks using only
+a single inference step. In addition to its efficiency, we also
+demonstrate the versatility of the method across different
+image translation tasks such as object removal, normal and
+depth estimation, and object relighting. We also derive a
+conditional framework of LBM and demonstrate its effectiveness by tackling the tasks of controllable image relighting and shadow generation. We provide an open-source implementation of the method at <a href="https://github.com/gojasper/LBM" target="blank">this https URL</a>.
+          </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- FLASH -->
+  <div class="row">
+    <div class="col-sm-2 abbr">
+      <span class="badge badge-success">proceedings (Oral)</span>
+    </div>
+    <div id="3" class="col-sm-8">
+        <div class="title">LBM: Latent Bridge Matching for Fast Image-to-Image Translation</div>
+        <div class="author">
+          <em>Chadebec, C.</em>, Tasar, O., Sreetharan, S. and Aubin, B.
+        </div>
+         <div class="book"><em>Accepted toAAAI Conference on Artificial Intelligence (AAAI 2025)</em></div>
+      <div class="links">
+        <a class="abstract btn btn-sm z-depth-0" role="button">
+        Abs
+        </a>
+        <a href="http://arxiv.org/abs/{{ 2406.02347}}" class="btn btn-sm z-depth-0"   role="button" target="_blank">arXiv</a>
+        <a href="{{'/assets/bibtex/chadebec_lbm_2025.bib' | relative_url }}"   class="btn btn-sm z-depth-0" role="button" target="_blank">Bibtex</a>
+      </div>
+      <div class="abstract hidden">
+        <p>
+          In this paper, we propose an efficient, fast, and versatile distillation method to accelerate the generation of pre-trained diffusion models: Flash Diffusion. The method reaches state-of-the-art performances in terms of FID and CLIP-Score for few steps image generation on the COCO2014 and COCO2017 datasets, while requiring only several GPU hours of training and fewer trainable parameters than existing methods. In addition to its efficiency, the versatility of the method is also exposed across several tasks such as text-to-image, inpainting, face-swapping, super-resolution and using different backbones such as UNet-based denoisers (SD1.5, SDXL) or DiT (Pixart-α), as well as adapters. In all cases, the method allowed to reduce drastically the number of sampling steps while maintaining very high-quality image generation. The official implementation is available at  <a href="https://github.com/gojasper/flash-diffusion" target="blank">this https URL</a>.
+          </p>
+      </div>
+    </div>
+  </div>
+
   <!-- #2022 -->
   <h2 class="year">2022</h2>
 
@@ -24,7 +87,7 @@ nav: true
         <div class="author">
           <em>Chadebec, C.</em>, Vincent, L. J. and Allassonnière, S.
         </div>
-         <div class="book"><em>Accepted to Neural Information Processing Systems (NeurIPS 2022).</em></div>
+         <div class="book"><em>Accepted to Neural Information Processing Systems (NeurIPS 2022)</em></div>
       <div class="links">
         <a class="abstract btn btn-sm z-depth-0" role="button">
         Abs
@@ -50,7 +113,7 @@ nav: true
         <div class="author">
           <em>Chadebec, C.</em> and Allassonnière, S.
         </div>
-         <div class="book"><em>Accepted to Neural Information Processing Systems (NeurIPS 2022).</em></div>
+         <div class="book"><em>Accepted to Neural Information Processing Systems (NeurIPS 2022)</em></div>
       <div class="links">
         <a class="abstract btn btn-sm z-depth-0" role="button">
         Abs
@@ -76,7 +139,7 @@ nav: true
         <div class="author">
           <em>Chadebec, C.</em>, Thibeau-Sutre, E., Burgos, N. and Allassonnière, S.
         </div>
-        <div class="book"><em>IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI).</em></div>
+        <div class="book"><em>IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)</em></div>
       <div class="links">
         <a class="abstract btn btn-sm z-depth-0" role="button">
         Abs
