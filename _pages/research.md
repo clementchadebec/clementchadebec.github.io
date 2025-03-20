@@ -30,7 +30,7 @@ nav: true
         Abs
         </a>
         <a href="http://arxiv.org/abs/{{ 2503.07535}}" class="btn btn-sm z-depth-0"   role="button" target="_blank">arXiv</a>
-        <a href="{{'/assets/bibtex/chadebec_flash_2025.bib' | relative_url }}"   class="btn btn-sm z-depth-0" role="button" target="_blank">Bibtex</a>
+        <a href="{{'/assets/bibtex/chadebec_lbm_2025.bib' | relative_url }}"   class="btn btn-sm z-depth-0" role="button" target="_blank">Bibtex</a>
       </div>
       <div class="abstract hidden">
         <p>
@@ -54,7 +54,7 @@ conditional framework of LBM and demonstrate its effectiveness by tackling the t
       <span class="badge badge-success">proceedings (Oral)</span>
     </div>
     <div id="3" class="col-sm-8">
-        <div class="title">LBM: Latent Bridge Matching for Fast Image-to-Image Translation</div>
+        <div class="title">Flash Diffusion: Accelerating Any Conditional Diffusion Model for Few Steps Image Generation</div>
         <div class="author">
           <em>Chadebec, C.</em>, Tasar, O., Sreetharan, S. and Aubin, B.
         </div>
@@ -64,7 +64,7 @@ conditional framework of LBM and demonstrate its effectiveness by tackling the t
         Abs
         </a>
         <a href="http://arxiv.org/abs/{{ 2406.02347}}" class="btn btn-sm z-depth-0"   role="button" target="_blank">arXiv</a>
-        <a href="{{'/assets/bibtex/chadebec_lbm_2025.bib' | relative_url }}"   class="btn btn-sm z-depth-0" role="button" target="_blank">Bibtex</a>
+        <a href="{{'/assets/bibtex/chadebec_flash_2025.bib' | relative_url }}"   class="btn btn-sm z-depth-0" role="button" target="_blank">Bibtex</a>
       </div>
       <div class="abstract hidden">
         <p>
