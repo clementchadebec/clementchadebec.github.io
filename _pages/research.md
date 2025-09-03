@@ -17,14 +17,14 @@ nav: true
   <!-- FLASH -->
   <div class="row">
     <div class="col-sm-2 abbr">
-      <span class="badge badge-info">preprint</span>
+      <span class="badge badge-success">proceedings (Highlight)</span>
     </div>
     <div id="3" class="col-sm-8">
         <div class="title">LBM: Latent Bridge Matching for Fast Image-to-Image Translation</div>
         <div class="author">
-          <em>Chadebec, C.</em>, Tasar, O., Benaroche, E. and Aubin, B.
+          <em>Chadebec, C.</em>, Tasar, O., Sreetharan, S. and Aubin, B.
         </div>
-         <div class="book"><em>Preprint</em></div>
+         <div class="book"><em>Accepted to the International Conference on Computer Vision (ICCV 2025)</em></div>
       <div class="links">
         <a class="abstract btn btn-sm z-depth-0" role="button">
         Abs
@@ -56,9 +56,9 @@ conditional framework of LBM and demonstrate its effectiveness by tackling the t
     <div id="3" class="col-sm-8">
         <div class="title">Flash Diffusion: Accelerating Any Conditional Diffusion Model for Few Steps Image Generation</div>
         <div class="author">
-          <em>Chadebec, C.</em>, Tasar, O., Sreetharan, S. and Aubin, B.
+          <em>Chadebec, C.</em>, Tasar, O., Benaroche, E. and Aubin, B.
         </div>
-         <div class="book"><em>Accepted toAAAI Conference on Artificial Intelligence (AAAI 2025)</em></div>
+         <div class="book"><em>Accepted to AAAI Conference on Artificial Intelligence (AAAI 2025)</em></div>
       <div class="links">
         <a class="abstract btn btn-sm z-depth-0" role="button">
         Abs
