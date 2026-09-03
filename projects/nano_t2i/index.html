@@ -7,7 +7,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="google-site-verification" content="K8iQXKj8_YwAKThxuRBM8cv5uQgM7Jyq8gCzFFWqEGA" />
 
-<title>Clément  Chadebec | blank</title>
+<title>Clément  Chadebec | <a href="https://github.com/gojasper/nano-t2i" target="_blank">nano-t2i</a></title>
 <meta name="description" content="A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 ">
 
@@ -32,7 +32,7 @@
 
 <link rel="stylesheet" href="/assets/css/main.css">
 
-<link rel="canonical" href="/blog/">
+<link rel="canonical" href="/projects/nano_t2i/">
 
 <!-- JQuery -->
 <!-- jQuery -->
@@ -113,8 +113,6 @@
           
           
           
-          
-          
           <li class="nav-item ">
               <a class="nav-link" href="/projects/">
                 Projects
@@ -164,24 +162,115 @@
     <div class="container mt-5">
       <div class="post">
 
-  <div class="header-bar">
-    <h1></h1>
-    <h2></h2>
-  </div>
-
-
-  <ul class="post-list">
+  <header class="post-header">
+    <h1 class="post-title"><a href="https://github.com/gojasper/nano-t2i" target="_blank">nano-t2i</a></h1>
     
-      <li>
-        <h3><a class="post-title" href="/2021/07/12/pyraug.html">Pyraug Case Study 1</a></h3>
-        <p class="post-meta">July 12, 2021</p>
-        <p>Use of Pyraug software to perform MRI classification</p>
-      </li>
+    <p class="post-description">A minimal, hackable codebase to train a text-to-image flow matching model end-to-end on a single H200 GPU for under $300</p>
     
-  </ul>
+  </header>
+
+  <article>
+    <div class="row ml-0 mr-0 p-0">
+    <div class="icon" data-toggle="tooltip" title="Code Repository">
+        <a href="https://github.com/gojasper/nano-t2i" target="_blank"><i class="fab fa-github gh-icon fa-2x"></i></a>
+    </div>
+    <div class="icon" data-toggle="tooltip" title="Arxiv">
+        <a href="https://arxiv.org/abs/2605.21272" target="_blank"><i class="ai ai-arxiv fa-2x"></i></a>
+    </div>
+    <div class="icon" data-toggle="tooltip" title="Hugging Face">
+        <a href="https://huggingface.co/datasets/jasperai/monet" target="_blank"><img class="hf-icon" src="/assets/img/icons/huggingface.svg" alt="Hugging Face" /></a>
+    </div>
+</div>
+
+<p><code class="language-plaintext highlighter-rouge">nano-t2i</code> is a minimal, hackable and fully open codebase to reproducibly train a
+text-to-image flow matching model end-to-end on the
+<a href="https://huggingface.co/datasets/jasperai/monet">MONET dataset</a> — from raw shards to a working Gradio demo
+in two commands, on a single H200 GPU, for under $300.</p>
+
+<h2 id="the-model">The model</h2>
+
+<p>A 1.3B DiT-style flow matching model pairing a <strong>Qwen3-4B</strong> text encoder with a
+<strong>SANA VAE</strong> latent backbone. The <code class="language-plaintext highlighter-rouge">nano</code> config stacks 5 dual-stream and 5
+single-stream DiT blocks with 24 attention heads of 128 dimensions each, relies on
+AdaLN sharing and is initialized with AdaLN-Zero. Everything is built on top of
+PyTorch Lightning and diffusers, and every architectural choice lives in a single
+YAML config, so the whole thing stays small enough to fit on one GPU and simple
+enough to take apart.</p>
+
+<p>Training runs in two sequential phases: 200k steps at 512×512, then 500k steps at
+1024×1024 resumed from the first phase. FlashAttention v3 is supported as well.</p>
+
+<h2 id="training-on-a-budget">Training on a budget</h2>
+
+<p>The headline result is how little it costs to go from nothing to a working
+text-to-image model. Counting at roughly $3 per H200 per hour:</p>
+
+<table class="table table-sm">
+  <thead>
+    <tr>
+      <th>Resolution</th>
+      <th>Hardware</th>
+      <th>Wall time</th>
+      <th>Cost</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>512</td>
+      <td>1×H200</td>
+      <td>24 h</td>
+      <td>~$72</td>
+    </tr>
+    <tr>
+      <td>512</td>
+      <td>1×H200</td>
+      <td>36 h</td>
+      <td>~$108</td>
+    </tr>
+    <tr>
+      <td>1024</td>
+      <td>1×H200</td>
+      <td>48 h</td>
+      <td>~$144</td>
+    </tr>
+    <tr>
+      <td>1024</td>
+      <td>1×H200</td>
+      <td>60 h</td>
+      <td>~$180</td>
+    </tr>
+    <tr>
+      <td>1024</td>
+      <td>1×H200</td>
+      <td>72 h</td>
+      <td>~$216</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="row justify-content-sm-center mt-3">
+    <div class="col-sm-12 mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="/assets/img/nano_t2i_project/training_curves.jpg" alt="nano-t2i training curves for the 1×H200 and 8×H200 reference runs" />
+    </div>
+</div>
+<div class="caption">
+    Training loss for the two reference runs, on 1×H200 and 8×H200.
+</div>
+
+<h2 id="data">Data</h2>
+
+<p>Training uses <strong>MONET</strong>, a 104.9M image-text corpus distilled from 2.9B raw pairs
+across nine open sources, with safety filtering, pHash and SSCD deduplication,
+domain governance and multi-VLM re-captioning. It ships pre-computed SANA-VAE
+latents so you can train in latent space directly, and is released under
+Apache-2.0 — as is this codebase.</p>
+
+<p>The same code was used to train the 4B model reported in
+<a href="https://arxiv.org/abs/2605.21272">the MONET paper</a>.</p>
+
+  </article>
 
   
-
 
 </div>
 
