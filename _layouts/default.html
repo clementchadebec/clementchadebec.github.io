@@ -14,7 +14,7 @@
 
     <!-- Content -->
 
-    <div class="container mt-5">
+    <div class="container{% unless page.tight_header %} mt-5{% endunless %}{% if page.tight_header %} projects-page{% endif %}">
       {{ content }}
     </div>
 

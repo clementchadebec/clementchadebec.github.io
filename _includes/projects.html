@@ -1,65 +1,49 @@
 <div class="grid-item">
-  {% if project.redirect %}
-  <a href="{{ project.redirect }}" target="_blank">
-  {% else %}
-  <a href="{{ project.url | relative_url }}">
-  {% endif %}
-    <div class="card hoverable">
-      {% if project.img %}
-      <img src="{{ project.img | relative_url }}" alt="project thumbnail">
-      {% endif %}
-      {% if project.video %}
-      <video src="{{ project.video | relative_url }}" autoplay loop muted playsinline></video>
-      {% endif %}
-      <div class="card-body">
-        <h2 class="card-title text-lowercase">{{ project.title }}</h2>
-        <p class="card-text">{{ project.description }}</p>
-        <div class="row ml-2 mr-2 p-2">
-          {% if project.github %}
-          <div class="github-icon">
-            <div class="icon" data-toggle="tooltip" title="Code Repository">
-              <a href="{{ project.github }}" target="_blank"><i class="fab fa-github gh-icon fa-2x"></i></a>
-            </div>
-            {% if project.github_stars %}
-            <span class="stars" data-toggle="tooltip" title="GitHub Stars">
-              <i class="fas fa-star"></i>
-              <span id="{{ project.github_stars }}-stars"></span>
-            </span>
-            {% endif %}
-          </div>
-          {% endif %}
-          {% if project.documentation %}
-          <div class="row ml-2 mr-2 p-10"></div>
-            <div class="icon" data-toggle="tooltip" title="Documentation">
-              <a href="{{ project.documentation }}" target="_blank"><i class="fas fa-book fa-2x"></i></a>
-            </div>
-          {% endif %}
-          {% if project.pypi_package %}
-          <div class="row ml-2 mr-2 p-10"></div>
-            <div class="icon" data-toggle="tooltip" title="Pypi Package">
-              <a href="{{ project.pypi_package }}" target="_blank"><i class="fab fa-python fa-2x"></i></a>
-            </div>
-          {% endif %}
-          {% if project.arxiv %}
-          <div class="row ml-2 mr-2 p-10"></div>
-            <div class="icon" data-toggle="tooltip" title="Arxiv">
-              <a href="{{ project.arxiv }}" target="_blank"><i class="ai ai-arxiv fa-2x"></i></a>
-            </div>
-          {% endif %}
-          {% if project.demo %}
-          <div class="row ml-2 mr-2 p-10"></div>
-            <div class="icon" data-toggle="tooltip" title="Demo">
-              <a href="{{ project.demo }}" target="_blank"><i class="fa fa-gamepad fa-2x"></i></a>
-            </div>
-          {% endif %}
-          {% if project.weights %}
-          <div class="row ml-2 mr-2 p-10"></div>
-            <div class="icon" data-toggle="tooltip" title="Weights">
-              <a href="{{ project.weights }}" target="_blank"><i class="fa fa-weight-hanging fa-2x"></i></a>
-            </div>
-          {% endif %}
+  <div class="card hoverable">
+    {% if project.img_contain %}{% assign fit_class = ' card-img-contain' %}{% else %}{% assign fit_class = '' %}{% endif %}
+    {% if project.img %}<img class="card-img-top{{ fit_class }}" src="{{ project.img | relative_url }}" alt="{{ project.title | strip_html }}">{% endif %}
+    {% if project.video %}<video class="card-img-top{{ fit_class }}" src="{{ project.video | relative_url }}" autoplay loop muted playsinline></video>{% endif %}
+    <div class="card-body">
+      <h2 class="card-title">{{ project.title | strip_html }}</h2>
+      <p class="card-text">{{ project.description }}</p>
+      <div class="card-links">
+        {% if project.github %}
+        <div class="icon" data-toggle="tooltip" title="Code Repository">
+          <a href="{{ project.github }}" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
         </div>
+        {% endif %}
+        {% if project.documentation %}
+        <div class="icon" data-toggle="tooltip" title="Documentation">
+          <a href="{{ project.documentation }}" target="_blank" aria-label="Documentation"><i class="fas fa-book"></i></a>
+        </div>
+        {% endif %}
+        {% if project.pypi_package %}
+        <div class="icon" data-toggle="tooltip" title="PyPI Package">
+          <a href="{{ project.pypi_package }}" target="_blank" aria-label="PyPI"><i class="fab fa-python"></i></a>
+        </div>
+        {% endif %}
+        {% if project.arxiv %}
+        <div class="icon" data-toggle="tooltip" title="arXiv">
+          <a href="{{ project.arxiv }}" target="_blank" aria-label="arXiv"><i class="ai ai-arxiv"></i></a>
+        </div>
+        {% endif %}
+        {% assign hf_url = project.huggingface | default: project.weights %}
+        {% if hf_url %}
+        <div class="icon" data-toggle="tooltip" title="Hugging Face">
+          <a href="{{ hf_url }}" target="_blank" aria-label="Hugging Face"><img class="hf-icon" src="{{ '/assets/img/icons/huggingface.svg' | relative_url }}" alt="Hugging Face"></a>
+        </div>
+        {% endif %}
+        {% if project.demo %}
+        <div class="icon" data-toggle="tooltip" title="Demo">
+          <a href="{{ project.demo }}" target="_blank" aria-label="Demo"><i class="fa fa-gamepad"></i></a>
+        </div>
+        {% endif %}
       </div>
     </div>
-  </a>
+    {% if project.redirect %}
+    <a class="card-link" href="{{ project.redirect }}" target="_blank" aria-label="{{ project.title | strip_html }}"></a>
+    {% else %}
+    <a class="card-link" href="{{ project.url | relative_url }}" aria-label="{{ project.title | strip_html }}"></a>
+    {% endif %}
+  </div>
 </div>

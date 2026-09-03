@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /research/
-title: research
+title: Research
 description:
 years: [2021, 2020]
 nav: true
@@ -11,13 +11,42 @@ nav: true
 
 <div class="publications">
 
+  <!-- #2026 -->
+  <h2 class="year">2026</h2>
+  <!-- MONET -->
+  <div class="row">
+    <div class="col-sm-2 abbr">
+      <span class="badge badge-info">preprint</span>
+    </div>
+    <div id="3" class="col-sm-8">
+        <div class="title">MONET: A Massive, Open, Non-redundant and Enriched Text-to-image dataset
+    </div>
+        <div class="author">
+          Aubin, B., Quintana, G. I., Tasar, O., Sreetharan, S., Czerwinska, U., Henry, D., and  <em>Chadebec, C.</em>
+        </div>
+         <div class="book"><em>Preprint</em></div>
+      <div class="links">
+        <a class="abstract btn btn-sm z-depth-0" role="button">
+        Abs
+        </a>
+        <a href="http://arxiv.org/abs/{{ 2605.21272}}" class="btn btn-sm z-depth-0"   role="button" target="_blank">arXiv</a>
+        <a href="{{'/assets/bibtex/chadebec_monet_2026.bib' | relative_url }}"   class="btn btn-sm z-depth-0" role="button" target="_blank">Bibtex</a>
+      </div>
+      <div class="abstract hidden">
+        <p>
+          Training large text-to-image models requires high-quality, curated datasets with diverse content and detailed captions. Yet the cost and complexity of collecting, filtering, deduplicating, and re-captioning such corpora at scale hinders open and reproducible research in the field. We introduce MONET, an open Apache 2.0 dataset of approx. 104.9M image--text pairs collected from 2.9B raw pairs across heterogeneous open sources through successive stages of safety filtering, domain-based filtering, exact and near-duplicate removal, and re-captioning with multiple vision-language models covering short to long-form descriptions, and further augmented with synthetically generated samples. Each image is shipped with pre-computed embeddings and annotations to accelerate downstream use. To validate the effectiveness of MONET, we train a 4B-parameter latent diffusion model exclusively on it and reach competitive GenEval and DPG scores, demonstrating that our dataset lowers the barrier to large-scale, reproducible text-to-image research.
+          </p>
+      </div>
+    </div>
+  </div>
+
   <!-- #2025 -->
   <h2 class="year">2025</h2>
 
   <!-- FLASH -->
   <div class="row">
     <div class="col-sm-2 abbr">
-      <span class="badge badge-success">proceedings (Highlight)</span>
+      <span class="badge badge-success">proceedings (High.)</span>
     </div>
     <div id="3" class="col-sm-8">
         <div class="title">LBM: Latent Bridge Matching for Fast Image-to-Image Translation</div>
@@ -211,6 +240,7 @@ conditional framework of LBM and demonstrate its effectiveness by tackling the t
         <div class="author">
           <em>Chadebec, C.</em> Mantoux, C. and Allassonnière, S.
         </div>
+         <div class="book"><em>Preprint</em></div>
       <div class="links">
         <a class="abstract btn btn-sm z-depth-0" role="button">
         Abs

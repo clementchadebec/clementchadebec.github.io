@@ -2,14 +2,14 @@
  * Style overrides for distill blog posts.
  ******************************************************************************/
 
+@use "variables" as *;
+
 input[type=checkbox] {
   display: none;
 }
 
 .container img {
   margin: 0px;
-  transition: transform 0.25s ease;
-  cursor: zoom-in;
 }
 
 input[type=checkbox]:checked ~ label > img {

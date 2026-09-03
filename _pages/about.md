@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 description: <b>Research Scientist at Jasper AI</b>
 

@@ -14,3 +14,8 @@ group :jekyll_plugins do
 end
 
 gem "ffi", "~> 1.15"
+
+# jekyll-github-metadata needs this for Faraday v2 retry support
+gem "faraday-retry"
+# jekyll-twitter-plugin requires ostruct, which leaves the default gems in Ruby 3.5
+gem "ostruct"
