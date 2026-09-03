@@ -8,7 +8,7 @@ github: https://github.com/gojasper/LBM
 gitstars: https://github.com/gojasper/LBM/stargazers
 arxiv: https://arxiv.org/abs/2503.07535
 demo: https://huggingface.co/spaces/jasperai/LBM_relighting
-importance: 2
+importance: 4
 category: work
 ---
 

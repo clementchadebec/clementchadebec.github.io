@@ -7,7 +7,7 @@ redirect: https://github.com/clementchadebec/benchmark_VAE
 github: https://github.com/clementchadebec/benchmark_VAE
 gitstars: https://github.com/clementchadebec/benchmark_VAE/stargazers
 licence: https://opensource.org/licenses/Apache-2.0
-importance: 4
+importance: 6
 category: work
 ---
 

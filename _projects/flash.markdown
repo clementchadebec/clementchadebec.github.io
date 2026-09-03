@@ -9,7 +9,7 @@ gitstars: https://github.com/gojasper/flash-diffusion/stargazers
 arxiv: https://arxiv.org/abs/2406.02347
 demo: https://huggingface.co/spaces/jasperai/flash-diffusion
 huggingface: https://huggingface.co/collections/jasperai/flash-diffusion-665dd5e62d8dafd54d5afd33
-importance: 3
+importance: 5
 category: work
 ---
 <div class="row ml-0 mr-0 p-0">

@@ -9,7 +9,7 @@ licence: https://opensource.org/licenses/Apache-2.0
 stars: https://github.com/clementchadebec/pyraug/stargazers
 pypi_package: https://pypi.org/project/pyraug/
 arxiv: https://arxiv.org/abs/2105.00026
-importance: 5
+importance: 7
 category: work
 
 bibliography: 2018-12-22-distill.bib

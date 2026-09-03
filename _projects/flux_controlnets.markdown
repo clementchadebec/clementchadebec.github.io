@@ -6,7 +6,7 @@ description: A collection of ControlNet models for Flux.1-dev by Jasper Research
 redirect: https://huggingface.co/collections/jasperai/flux1-dev-controlnets-66f27f9459d760dcafa32e08
 demo: https://huggingface.co/spaces/jasperai/Flux.1-dev-Controlnet-Upscaler
 huggingface: https://huggingface.co/collections/jasperai/flux1-dev-controlnets-66f27f9459d760dcafa32e08
-importance: 2
+importance: 3
 category: work
 ---
 
