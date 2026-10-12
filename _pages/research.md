@@ -16,7 +16,7 @@ nav: true
   <!-- MONET -->
   <div class="row">
     <div class="col-sm-2 abbr">
-      <span class="badge badge-info">preprint</span>
+      <span class="badge badge-success">proceedings</span>
     </div>
     <div id="3" class="col-sm-8">
         <div class="title">MONET: A Massive, Open, Non-redundant and Enriched Text-to-image dataset
@@ -29,7 +29,7 @@ nav: true
         <a class="abstract btn btn-sm z-depth-0" role="button">
         Abs
         </a>
-        <a href="http://arxiv.org/abs/{{ 2605.21272}}" class="btn btn-sm z-depth-0"   role="button" target="_blank">arXiv</a>
+        <a href="http://arxiv.org/abs/{{ 2605.21272}}" class="btn btn-sm z-depth-0"   role="button" target="_blank">Accepted to Neural Information Processing Systems (NeurIPS 2026)</a>
         <a href="{{'/assets/bibtex/chadebec_monet_2026.bib' | relative_url }}"   class="btn btn-sm z-depth-0" role="button" target="_blank">Bibtex</a>
       </div>
       <div class="abstract hidden">
