@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-description: <b>Research Scientist at Runway</b>
+description: <b>Member of Techical Staff, Research at Runway</b>
 
 profile:
   align: right
