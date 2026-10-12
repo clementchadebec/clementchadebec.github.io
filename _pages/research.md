@@ -24,12 +24,12 @@ nav: true
         <div class="author">
           Aubin, B., Quintana, G. I., Tasar, O., Sreetharan, S., Czerwinska, U., Henry, D., and  <em>Chadebec, C.</em>
         </div>
-         <div class="book"><em>Preprint</em></div>
+         <div class="book"><em>Accepted to Neural Information Processing Systems (NeurIPS 2022)</em></div>
       <div class="links">
         <a class="abstract btn btn-sm z-depth-0" role="button">
         Abs
         </a>
-        <a href="http://arxiv.org/abs/{{ 2605.21272}}" class="btn btn-sm z-depth-0"   role="button" target="_blank">Accepted to Neural Information Processing Systems (NeurIPS 2026)</a>
+        <a href="http://arxiv.org/abs/{{ 2605.21272}}" class="btn btn-sm z-depth-0"   role="button" target="_blank">Arxiv</a>
         <a href="{{'/assets/bibtex/chadebec_monet_2026.bib' | relative_url }}"   class="btn btn-sm z-depth-0" role="button" target="_blank">Bibtex</a>
       </div>
       <div class="abstract hidden">
